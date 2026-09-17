@@ -13,7 +13,7 @@ lidar:
         use_ptc_connected: true                       # Set to false when ptc connection is not used
         host_ptc_port: 0                              # PTC source port, 0 means auto
         correction_file_path: "Your correction file path"   # The path of correction file
-        firetimes_path: "/home/unitree/go2_ws/src/go2_robot/hesai/src/HesaiLidar_ROS_2.0/src/driver/HesaiLidar_SDK_2.0/correction/firetime_correction/PandarXT-16_Firetime Correction File.csv"           # The path of firetimes file
+        firetimes_path: "/home/unitree/go2_ws/src/hesai_lidar/src/driver/HesaiLidar_SDK_2.0/correction/firetime_correction/PandarXT-16_Firetime Correction File.csv"           # The path of firetimes file
 
         recv_point_cloud_timeout: -1                  # The timeout of receiving point cloud
         ptc_connect_timeout: -1                       # The timeout of ptc connection
@@ -65,7 +65,7 @@ lidar:
       # fov config, [fov_start, fov_end] range [1, 359], [-1, -1]means use default
       fov_start: -1
       fov_end:  -1
-      channel_fov_filter_path: "/home/unitree/go2_ws/src/go2_robot/hesai/src/HesaiLidar_ROS_2.0/src/driver/HesaiLidar_SDK_2.0/config/channel_fov_filter.txt"  # The path of channel_fov_filter file, like channel 0 filter [10, 20] and [30,40]
+      channel_fov_filter_path: "/home/unitree/go2_ws/src/hesai_lidar/src/driver/HesaiLidar_SDK_2.0/config/channel_fov_filter.txt"  # The path of channel_fov_filter file, like channel 0 filter [10, 20] and [30,40]
       multi_fov_filter_ranges: "" # compare to channel_fov_filter_path, multi_fov_filter_ranges for all channels. example config "[20,30];[40,200]"
       # other config
       enable_packet_loss_tool: true         # enable the udp packet loss detection tool
